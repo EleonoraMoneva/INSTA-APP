@@ -1,0 +1,12 @@
+.main{
+    width: 20%;
+    height: 25%;
+    margin: 2em !important;
+    padding: 2em !important;
+    float: left;
+}
+
+.sizeImg{
+    width: 110%;
+    height: 250px;
+}
