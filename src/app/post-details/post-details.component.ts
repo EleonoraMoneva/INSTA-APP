@@ -41,7 +41,8 @@ export class PostDetailsComponent implements OnInit {
     }
 
     onComment(){
-      this.postComments.push(this.newComment);
+      let copiedComment ={...this.newComment};
+      this.postComments.push(copiedComment);
       this.newComment.comment='';
     }
 }
