@@ -1,53 +1,30 @@
-<img mat-card-image [src]="data.pictureUrl" alt="Photo of a Shiba Inu" class="sizeImg2 float-left">
+<img mat-card-image [src]="data.clickedPost.photoUrl" alt="Photo of a Shiba Inu" class="sizeImg2 float-left">
 <div class="scroll">
-
-<div class="comment">
-        <mat-card-header>
-                <img mat-card-avatar [src]="data.pictureUrl">
-                <mat-card-title>John Doe</mat-card-title>
-                <mat-card-subtitle>@johndoe</mat-card-subtitle>
-        </mat-card-header>
-    <p>Lorem ipsum is placeholder text commonly used</p>
-</div>
-<div class="comment">
-        <mat-card-header>
-                <img mat-card-avatar [src]="data.pictureUrl">
-                <mat-card-title>John Doe</mat-card-title>
-                <mat-card-subtitle>@johndoe</mat-card-subtitle>
-        </mat-card-header>
-    <p>Lorem ipsum is placeholder text commonly used</p>
-</div>
-<div class="comment">
-        <mat-card-header>
-                <img mat-card-avatar [src]="data.pictureUrl">
-                <mat-card-title>John Doe</mat-card-title>
-                <mat-card-subtitle>@johndoe</mat-card-subtitle>
-        </mat-card-header>
-    <p>Lorem ipsum is placeholder text commonly used</p>
-</div>
-<div class="comment">
-        <mat-card-header>
-                <img mat-card-avatar [src]="data.pictureUrl">
-                <mat-card-title>John Doe</mat-card-title>
-                <mat-card-subtitle>@johndoe</mat-card-subtitle>
-        </mat-card-header>
-    <p>Lorem ipsum is placeholder text commonly used</p>
-</div>
-<div class="comment">
-        <mat-card-header>
-                <img mat-card-avatar [src]="data.pictureUrl">
-                <mat-card-title>John Doe</mat-card-title>
-                <mat-card-subtitle>@johndoe</mat-card-subtitle>
-        </mat-card-header>
-    <p>Lorem ipsum is placeholder text commonly used</p>
-</div>
+        <!-- Session 1 -->
+        <!-- <div class="comment">
+                <mat-card-header>
+                        <img mat-card-avatar [src]="data.pictureUrl">
+                        <mat-card-title>John Doe</mat-card-title>
+                        <mat-card-subtitle>@johndoe</mat-card-subtitle>
+                </mat-card-header>
+            <p>Lorem ipsum is placeholder text commonly used</p>
+        </div> -->
+        <!-- Session 2 -->
+        <div class="comment"  *ngFor="let postComment of postComments">
+                <mat-card-header>
+                        <img mat-card-avatar [src]="postComment.photoUrl">
+                        <mat-card-title>{{postComment.fullName}}</mat-card-title>
+                        <mat-card-subtitle>{{postComment.accountName}}</mat-card-subtitle>
+                </mat-card-header>
+                <p><b>{{postComment.comment}}</b></p>
+        </div>
 </div>
 
 <div class="comment">
 
 <mat-form-field>
-  <input matInput placeholder="What's on your mind?">
+  <input matInput placeholder="What's on your mind?" [(ngModel)]="newComment.comment">
 </mat-form-field>
-<button mat-raised-button >Comment</button>
+<button mat-raised-button (click)="onComment()">Comment</button>
 </div>
 

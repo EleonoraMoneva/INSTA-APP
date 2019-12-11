@@ -1,9 +1,16 @@
 <mat-toolbar color="primary">FEIT Instagram</mat-toolbar>
-<div>
+
+<!-- Session1 -->
+<!-- <div>
   <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba1.jpg'"></app-posts>
   <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba2.jpg'"></app-posts>
   <app-posts (click)="onClick()"[pictureUrl]="'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'"></app-posts>
   <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba1.jpg'"></app-posts>
   <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba2.jpg'"></app-posts>
   <app-posts (click)="onClick()"[pictureUrl]="'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'"></app-posts>
+</div> -->
+
+<!-- Session2 -->
+<div *ngFor="let post of posts">
+  <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
 </div>

@@ -15,6 +15,8 @@ import { MatToolbarModule } from '@angular/material/';
 import { PostsComponent } from './posts/posts.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { DemoMaterialModule } from 'src/mat.modules';
+import { FormsModule } from '@angular/forms';  
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { DemoMaterialModule } from 'src/mat.modules';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     DemoMaterialModule
   ],
   providers: [],

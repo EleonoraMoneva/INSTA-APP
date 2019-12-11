@@ -8,15 +8,30 @@ import { PostDetailsComponent } from './post-details/post-details.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test1';
+  title = 'FEIT Workshop';
 
-  constructor(public dialog: MatDialog) {}
+  posts: Post[] = [];
 
-  onClick(){
+  constructor(public dialog: MatDialog) {
+    this.posts = [
+      { id: 1,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' },
+      { id: 2,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba2.jpg' },
+      { id: 3,  photoUrl:  'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'       },
+      { id: 4,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' },
+      { id: 5,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba2.jpg' },
+      { id: 6,  photoUrl:  'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'       },
+      { id: 7,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' },
+      { id: 8,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba2.jpg' },
+      { id: 9,  photoUrl:  'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'       },
+      { id: 10, photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' }
+    ];
+  }
+
+  onClick(post: Post){
     const dialogRef = this.dialog.open(PostDetailsComponent, {
       width: '750px',
       height: '700px',
-      data: {name: "FIco", pictureUrl: "https://material.angular.io/assets/img/examples/shiba1.jpg"}
+      data: {clickedPost: post}
     });
 
     dialogRef.afterClosed().subscribe(result => {
