@@ -16,6 +16,7 @@ import { PostsComponent } from './posts/posts.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { DemoMaterialModule } from 'src/mat.modules';
 import { FormsModule } from '@angular/forms';  
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FormsModule,
     DemoMaterialModule
   ],
