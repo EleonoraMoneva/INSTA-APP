@@ -3,10 +3,12 @@
 # Session 3 - (Pending) Services, REST API
 
 Session 3 API Samples:
+
 https://5df115fd9df6fb00142bd818.mockapi.io/api/posts
 https://5df115fd9df6fb00142bd818.mockapi.io/api/posts/1/postComments
 
 Create your own clone API:
+
 https://www.mockapi.io/clone/5df115fd9df6fb00142bd819
 
 # Session 4 - (Pending)
