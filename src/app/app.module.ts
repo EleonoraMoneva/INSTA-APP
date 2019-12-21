@@ -17,6 +17,7 @@ import { PostDetailsComponent } from './post-details/post-details.component';
 import { DemoMaterialModule } from 'src/mat.modules';
 import { FormsModule } from '@angular/forms';  
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    ScrollingModule
   ],
   providers: [],
   entryComponents: [PostDetailsComponent, PostsComponent],

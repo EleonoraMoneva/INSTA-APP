@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { InstagramApiService } from './instagram-api.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +11,7 @@ import { InstagramApiService } from './instagram-api.service';
 })
 export class AppComponent {
   title = 'FEIT Workshop';
-
+  pageNumber: number=1;
   posts: Post[] = [];
 
   constructor(public dialog: MatDialog, private apiService: InstagramApiService) {
@@ -29,9 +30,12 @@ export class AppComponent {
     // ];
     
     //Session3
-    this.apiService.getPosts().subscribe((receivedPosts)=>{
-      this.posts = receivedPosts;
-    });
+    // this.apiService.getPosts().subscribe((receivedPosts)=>{
+    //   this.posts = receivedPosts;
+    // });
+
+    //Session4
+    this.getPosts();
   }
 
   onClick(post: Post){
@@ -44,6 +48,17 @@ export class AppComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
       // // this.animal = result;
+    });
+  }
+
+  onLoadMore(){
+    this.pageNumber++;
+    this.getPosts();
+  }
+
+  getPosts(){
+    this.apiService.getPosts(this.pageNumber).subscribe((receivedPosts)=>{
+      this.posts = receivedPosts;
     });
   }
 }
