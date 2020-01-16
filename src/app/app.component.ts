@@ -15,26 +15,7 @@ export class AppComponent {
   posts: Post[] = [];
 
   constructor(public dialog: MatDialog, private apiService: InstagramApiService) {
-    //Session2
-    // this.posts = [
-    //   { id: 1,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' },
-    //   { id: 2,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    //   { id: 3,  photoUrl:  'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'       },
-    //   { id: 4,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' },
-    //   { id: 5,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    //   { id: 6,  photoUrl:  'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'       },
-    //   { id: 7,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' },
-    //   { id: 8,  photoUrl:  'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    //   { id: 9,  photoUrl:  'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'       },
-    //   { id: 10, photoUrl:  'https://material.angular.io/assets/img/examples/shiba1.jpg' }
-    // ];
-    
-    //Session3
-    // this.apiService.getPosts().subscribe((receivedPosts)=>{
-    //   this.posts = receivedPosts;
-    // });
-
-    //Session4
+   
     this.getPosts();
   }
 
@@ -47,10 +28,15 @@ export class AppComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      // // this.animal = result;
     });
   }
-
+  onLoadLess()
+  {
+    this.pageNumber--;
+    if (this.pageNumber<1)
+    this.pageNumber=1;
+    this.getPosts();
+  }
   onLoadMore(){
     this.pageNumber++;
     this.getPosts();

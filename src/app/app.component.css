@@ -1,12 +1,20 @@
-.span {
-    margin: auto;
-    font-style: initial;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.kopce1
+{
+    margin-top: 125px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    float: right;
+    margin-right:440px;
+    text-align: center;
     
     
 }
-
-.mat-toolbar {
-    background:red;
-    color: #fff;
-  }
+.kopce2
+{
+    margin-top: 125px;
+    margin-left: -75px;
+    float:left;
+    padding-right: 10px;
+    padding-bottom:25px;
+    
+}

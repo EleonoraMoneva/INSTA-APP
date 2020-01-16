@@ -1,17 +1,31 @@
+<mat-toolbar color="primary" >FEIT Instagram</mat-toolbar>
 
-<mat-toolbar >
-  <mat-toolbar-row >
-      <span class="span">INSTAGRAM </span>
-  </mat-toolbar-row>
+<!-- Session1 -->
+<!-- <div>
+  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba1.jpg'"></app-posts>
+  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba2.jpg'"></app-posts>
+  <app-posts (click)="onClick()"[pictureUrl]="'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'"></app-posts>
+  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba1.jpg'"></app-posts>
+  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba2.jpg'"></app-posts>
+  <app-posts (click)="onClick()"[pictureUrl]="'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'"></app-posts>
+</div> -->
 
-</mat-toolbar>
+<!-- Session2 -->
+<!-- <div *ngFor="let post of posts">
+  <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
+</div> -->
 
-<cdk-virtual-scroll-viewport [itemSize]="200" style="height: 700px">
+<!-- Session4 -->
+<body style="background-image: white; background-size: cover;">
+<cdk-virtual-scroll-viewport [itemSize]="200" style="height: 1000px">
 <div *cdkVirtualFor="let post of posts">
   <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
 </div>
-<div style="padding: 30px;">
-  <button mat-fab color="basic" (click)="onLoadMore()">Next</button>
+<div >
+  <button class="kopce2" mat-fab color= "primary"(click)="onLoadLess()">Pervious</button>
+  <button class="kopce1" mat-fab color= "primary" (click)="onLoadMore()">Next</button>
 </div>
 </cdk-virtual-scroll-viewport>
 
+
+</body>
