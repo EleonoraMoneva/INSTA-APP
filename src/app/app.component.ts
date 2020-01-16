@@ -19,17 +19,17 @@ export class AppComponent {
     this.getPosts();
   }
 
-  onClick(post: Post){
-    const dialogRef = this.dialog.open(PostDetailsComponent, {
-      width: '750px',
-      height: '700px',
-      data: {clickedPost: post}
-    });
+  //onClick(post: Post){
+   // const dialogRef = this.dialog.open(PostDetailsComponent, {
+    //  width: '750px',
+     // height: '700px',
+      //data: {clickedPost: post}
+    //});
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
+    //dialogRef.afterClosed().subscribe(result => {
+     // console.log('The dialog was closed');
+    //});
+ // }
   onLoadLess()
   {
     this.pageNumber--;

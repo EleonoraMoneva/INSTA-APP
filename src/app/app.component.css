@@ -1,19 +1,19 @@
 .kopce1
 {
-    margin-top: 125px;
+    margin-top: -15%;
     padding-left: 10px;
     padding-bottom: 25px;
     float: right;
-    margin-right:440px;
+    margin-right:20%;
     text-align: center;
-    
+    position: relative;
     
 }
 .kopce2
-{
-    margin-top: 125px;
-    margin-left: -75px;
-    float:left;
+{   position: absolute;
+    margin-top: -15%;
+    margin-left:19%;
+    
     padding-right: 10px;
     padding-bottom:25px;
     
