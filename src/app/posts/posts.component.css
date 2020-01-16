@@ -1,12 +1,28 @@
 .main{
-    width: 20%;
-    height: 25%;
-    margin: 2em !important;
+    width: 50%;
+    height: 80%;
+    margin-top: 5em !important;
+    margin-left:23% !important;
+    background-position: center;
     padding: 2em !important;
-    float: left;
+    float: center;
+    background-image:white;
+    
 }
 
 .sizeImg{
-    width: 110%;
-    height: 250px;
+    width: 101%;
+    height: 550px;
+}
+
+.kopce
+{
+    float:right;
+     background-image: url('https://i.ya-webdesign.com/images/facebook-like-and-love-buttons-png-transparent-6.png?fbclid=IwAR3D-qz9_5niWAHkDnJTqBnB4uPlKmMqR5MOCy5Y1L4ZMNTzjZDWUUYs03Q');
+     background-size:cover;
+     background-color:transparent;
+     width: 40px;
+     height: 40px;
+     margin-top:-15px;
+     border:none;
 }
