@@ -1,0 +1,12 @@
+.span {
+    margin: auto;
+    font-style: initial;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+.mat-toolbar {
+    background:red;
+    color: #fff;
+  }

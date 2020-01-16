@@ -1,0 +1,17 @@
+
+<mat-toolbar >
+  <mat-toolbar-row >
+      <span class="span">INSTAGRAM </span>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<cdk-virtual-scroll-viewport [itemSize]="200" style="height: 700px">
+<div *cdkVirtualFor="let post of posts">
+  <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
+</div>
+<div style="padding: 30px;">
+  <button mat-fab color="basic" (click)="onLoadMore()">Next</button>
+</div>
+</cdk-virtual-scroll-viewport>
+
