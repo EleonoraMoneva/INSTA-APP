@@ -1,31 +1,17 @@
-<mat-toolbar color="primary" >FEIT Instagram</mat-toolbar>
 
-<!-- Session1 -->
-<!-- <div>
-  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba1.jpg'"></app-posts>
-  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba2.jpg'"></app-posts>
-  <app-posts (click)="onClick()"[pictureUrl]="'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'"></app-posts>
-  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba1.jpg'"></app-posts>
-  <app-posts (click)="onClick()"[pictureUrl]="'https://material.angular.io/assets/img/examples/shiba2.jpg'"></app-posts>
-  <app-posts (click)="onClick()"[pictureUrl]="'https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg'"></app-posts>
-</div> -->
-
-<!-- Session2 -->
-<!-- <div *ngFor="let post of posts">
-  <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
-</div> -->
-
-<!-- Session4 -->
-<body style="background-image: white; background-size: cover;">
+<mat-toolbar id="brm" style="background-color:#FF1744 ;" >FEIT Instagram</mat-toolbar>
+<mat-slide-toggle (click)="mode()"class="slajt">Light/Dark</mat-slide-toggle>
+<div id="parent">
+  <div id="child">
 <cdk-virtual-scroll-viewport [itemSize]="200" style="height: 1000px">
 <div *cdkVirtualFor="let post of posts">
   <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
 </div>
 <div >
-  <button class="kopce2" mat-fab color= "primary"(click)="onLoadLess()">Pervious</button>
-  <button class="kopce1" mat-fab color= "primary" (click)="onLoadMore()">Next</button>
+ <div> <button class="kopce1"  (click)="onLoadLess()"></button></div>
+ <div><button class="kopce2" (click)="onLoadMore()"></button></div>
 </div>
 </cdk-virtual-scroll-viewport>
-
-
-</body>
+  
+</div>
+</div>
