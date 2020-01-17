@@ -10,3 +10,7 @@ class PostComment {
     photoUrl: string;
     comment: string;
 }
+class light
+{
+    value: Boolean;
+}
