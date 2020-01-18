@@ -13,8 +13,3 @@ export class PostsComponent implements OnInit {
   }
 
 }
-
-function lajk()
-{
-document.getElementById("nice").style.visibility="visible";
-}
