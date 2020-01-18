@@ -47,7 +47,6 @@ export class AppComponent {
     document.getElementById("parent").style.width="100%";
     document.getElementById("parent").style.height="2000%";
     document.getElementById("ramka").style.backgroundColor="#607D8B";
-   
   }
     else
     {
@@ -56,7 +55,6 @@ export class AppComponent {
      document.getElementById("parent").style.width="100%";
      document.getElementById("parent").style.backgroundSize="1%";
     document.getElementById("parent").style.height="2000%";
-    
     document.getElementById("ramka").style.backgroundColor="rgb(240, 186, 222)";
     }
     this.light=!this.light;
