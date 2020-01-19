@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatSlideToggle } from '@angular/material';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { InstagramApiService } from './instagram-api.service';
-import { ConstantsService } from './common/services/constants.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
