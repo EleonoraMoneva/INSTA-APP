@@ -66,4 +66,9 @@ mode()
     }
     this.light=!this.light; 
 }
+  loginf()
+{
+  alert("You are logged in!");
+}
+}
 }
