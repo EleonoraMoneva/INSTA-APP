@@ -9,22 +9,27 @@
     background-size:cover;
     width:45px;
     height: 50px;
-    
 }
 .kopce1
 {   
     background-image:url("https://www.freeiconspng.com/uploads/red-arrow-left-png-6.png");
-    background-color:transparent;
-    border:none;
     background-size:cover;
+    background-color:transparent;
     width:45px;
-    height: 50px;
+    height:50px;
+    border:none;
 margin-top:-16%;
 margin-left:38.8%;
 position: absolute;
+
 }
 
-
+.login
+{
+    float:left; margin-top:-2%;margin-left:1%;
+    background-color: transparent;
+    border:none;
+}
 
 #parent {height: 45px; position: relative;}
 #parent::after {
