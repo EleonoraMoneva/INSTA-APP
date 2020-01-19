@@ -38,7 +38,7 @@ export class AppComponent {
     });
   }
    
-  mode()
+mode()
   {
     if (this.light){
     document.getElementById("brm").style.backgroundColor="#37474F";
@@ -46,6 +46,10 @@ export class AppComponent {
     document.getElementById("parent").style.width="100%";
     document.getElementById("parent").style.height="2000%";
     document.getElementById("ramka").style.backgroundColor="#607D8B";
+    document.getElementById("desc").style.backgroundColor="#455A64";
+    document.getElementById("desc").style.color="white";
+    document.getElementById("com").style.backgroundColor="#455A64";
+    document.getElementById("com").style.color="white";
   }
     else
     {
@@ -55,8 +59,11 @@ export class AppComponent {
      document.getElementById("parent").style.backgroundSize="1%";
     document.getElementById("parent").style.height="2000%";
     document.getElementById("ramka").style.backgroundColor="rgb(240, 186, 222)";
+    document.getElementById("desc").style.backgroundColor="rgb(212, 189, 255)";
+    document.getElementById("desc").style.color="black";
+    document.getElementById("com").style.backgroundColor="rgb(212, 189, 255)";
+    document.getElementById("com").style.color="black";
     }
-    this.light=!this.light;
-    
+    this.light=!this.light; 
 }
 }
