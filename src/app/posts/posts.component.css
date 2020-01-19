@@ -2,13 +2,14 @@
     width: 42%;
     height: 80%;
     margin-top: 5em !important;
-    margin-left:23% !important;
+    margin-left:26% !important;
     background-position: center;
     padding: 2em !important;
     float: center;
     border-radius:10px;
     background-color:rgb(240, 186, 222);
     background-blend-mode: lighten;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .sizeImg{
@@ -27,4 +28,32 @@
      height: 40px;
      margin-top:-15px;
      border:none;
+}
+
+.descr
+{
+    float:right;
+    margin-right:5%;
+    margin-top:-20%;
+    width:10%;
+    border-radius:10px;
+    height:400px;
+    color:black;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: rgb(212, 189, 255);
+    box-shadow: 5px 5px 5px gray;
+
+}
+.comm
+{
+    float:left;
+    margin-left:-25%;
+    margin-top:-20%;
+    width:10%;
+    border-radius:10px;
+    height:400px;
+    color:black;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: rgb(212, 189, 255);
+    box-shadow: 5px 5px 5px gray;
 }
