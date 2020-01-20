@@ -1,7 +1,7 @@
 .kopce2
 {
     margin-top:-19%;
-    margin-left:68.5%;
+    margin-left:54.7%;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/7a/Red_Arrow_Right.svg");
     background-color:transparent;
     border:none;
@@ -16,9 +16,9 @@
     background-size:cover;
     background-color:transparent;
     width:45px;
-    height:60px;
+    height:50px;
     border:none;
-    margin-top:30%;
+    margin-top:-19%;
     margin-left:8%;
     position: absolute;
 }
