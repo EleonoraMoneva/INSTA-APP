@@ -51,39 +51,27 @@ export class AppComponent {
    
 mode()
   {
-    if (this.light){
-    document.getElementById("brm").style.backgroundColor="#37474F";
-    document.getElementById("parent").style.backgroundColor="#263238";
-    document.getElementById("parent").style.width="100%";
-    document.getElementById("parent").style.height="2000%";
-    document.getElementById("ramka").style.backgroundColor="#607D8B";
-    document.getElementById("pink").style.backgroundColor="#607D8B";
-    document.getElementById("floyd").style.backgroundColor="#607D8B";
-    document.getElementById("pink").style.boxShadow="0px 0px 0px";
-    document.getElementById("floyd").style.boxShadow="0px 0px 0px";
-    document.getElementById("ramka").style.boxShadow="0px 0px 0px";
-    document.getElementById("lajk").style.backgroundColor="#607D8B";
-    document.getElementById("lajk").style.boxShadow="0px 0px 0px";
-
-  }
-    else
+    if (this.light)
     {
-    document.getElementById("brm").style.backgroundColor="#FF1744";
-    document.getElementById("parent").style.backgroundColor="#EDE7F6"; 
-     document.getElementById("parent").style.width="100%";
-     document.getElementById("parent").style.backgroundSize="1%";
-    document.getElementById("parent").style.height="2000%";
-    document.getElementById("ramka").style.backgroundColor="rgb(240, 186, 222)";
-    document.getElementById("pink").style.backgroundColor="rgb(212, 189, 255)";
-    document.getElementById("floyd").style.backgroundColor="rgb(212, 189, 255)";
-    document.getElementById("pink").style.boxShadow="5px 5px 5px gray";
-    document.getElementById("floyd").style.boxShadow="5px 5px 5px gray";
-    document.getElementById("ramka").style.boxShadow="5px 5px 5px gray";
-    document.getElementById("lajk").style.backgroundColor="rgb(212, 189, 255)";
-    document.getElementById("lajk").style.boxShadow="5px 5px 5px gray";
+      document.getElementById("child").style.background="#341677";
+      document.getElementById("brm").style.background="#000272";
+      document.getElementById("pink").style.backgroundColor="#4f3b78";
+      document.getElementById("floyd").style.background="#4f3b78";
+      document.getElementById("lajk").style.backgroundColor="#4f3b78";
+      document.getElementById("lajk").style.color="white";
+      document.getElementById("lajk").style.boxShadow="0px 0px 0px";
     }
-    this.light=!this.light; 
-}
+    else{
+      document.getElementById("child").style.background="linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#c13584,#E1306C,#FD1D1D)";
+      document.getElementById("brm").style.background="linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#c13584,#E1306C,#FD1D1D)";
+      document.getElementById("pink").style.backgroundColor="#c13584";
+      document.getElementById("floyd").style.backgroundColor="#c13584";
+      document.getElementById("lajk").style.backgroundColor="rgb(212, 189, 255)";
+      document.getElementById("lajk").style.color="black";
+      document.getElementById("lajk").style.boxShadow="5px 5px 5px gray";
+    }
+    this.light=!this.light;
+  }
   loginf()
 {
   alert("You are logged in!");
