@@ -88,8 +88,8 @@
 }
 .casa
 {
-    margin-top: -2.8%;
-    margin-left:47%;
+    margin-top: -2.65%;
+    margin-left:46%;
     font-size:125%;
     background-color: rgb(212, 189, 255) ;
     width:100px;
@@ -104,12 +104,12 @@
 {
     float:right;
     margin-top:-1.5%;
-    margin-right: 30%;
+    margin-right: 39%;
     border:none;
     background-image: url('https://i.ya-webdesign.com/images/facebook-like-and-love-buttons-png-transparent-6.png?fbclid=IwAR3D-qz9_5niWAHkDnJTqBnB4uPlKmMqR5MOCy5Y1L4ZMNTzjZDWUUYs03Q');
     background-size:cover;
     background-color:transparent;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
 
 }
