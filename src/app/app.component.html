@@ -7,11 +7,14 @@
   <div id="child">
 <cdk-virtual-scroll-viewport [itemSize]="200" style="height: 1000px">
 <div *cdkVirtualFor="let post of posts">
-  <app-posts [pictureUrl]="post.imageURL"></app-posts>
+  <app-posts [pictureUrl]="post.imageURL"> </app-posts>
+  <br><div id="lajk"class="casa"> <b>Likes:  </b><em>{{post.likes}}</em></div>
   <div id="pink" class ="dire" ><b>Description:</b><br><em>{{post.description}}</em></div>
   <div id="floyd"class="straits" ><b>Comments:</b><br><em>{{post.comments}}</em></div>
+  
 </div>
 <div >
+  <button class="lajkop" (click)="lajkfunk()"></button>
  <div> <button class="kopce1"  (click)="onLoadLess()"></button></div>
  <div><button class="kopce2" (click)="onLoadMore()"></button></div>
 </div>

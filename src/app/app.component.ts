@@ -17,6 +17,7 @@ export class AppComponent {
   pageNumber: number=1;
   posts: Post[] = [];
   light:Boolean=true;
+  dop:Boolean=false;
   masa:number=1;
  
   constructor(public dialog: MatDialog, private apiService: InstagramApiService) {
@@ -62,6 +63,9 @@ mode()
     document.getElementById("pink").style.boxShadow="0px 0px 0px";
     document.getElementById("floyd").style.boxShadow="0px 0px 0px";
     document.getElementById("ramka").style.boxShadow="0px 0px 0px";
+    document.getElementById("lajk").style.backgroundColor="#607D8B";
+    document.getElementById("lajk").style.boxShadow="0px 0px 0px";
+
   }
     else
     {
@@ -75,12 +79,18 @@ mode()
     document.getElementById("floyd").style.backgroundColor="rgb(212, 189, 255)";
     document.getElementById("pink").style.boxShadow="5px 5px 5px gray";
     document.getElementById("floyd").style.boxShadow="5px 5px 5px gray";
-    document.getElementById("floyd").style.boxShadow="5px 5px 5px gray";
+    document.getElementById("ramka").style.boxShadow="5px 5px 5px gray";
+    document.getElementById("lajk").style.backgroundColor="rgb(212, 189, 255)";
+    document.getElementById("lajk").style.boxShadow="5px 5px 5px gray";
     }
     this.light=!this.light; 
 }
   loginf()
 {
   alert("You are logged in!");
+}
+
+lajkfunk()
+{
 }
 }
