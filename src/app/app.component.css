@@ -1,14 +1,14 @@
 .kopce2
 {
-    margin-top:-19%;
-    margin-left:68.5%;
-    position: absolute;
+    margin-top:10%;
+    margin-left:75%;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/7a/Red_Arrow_Right.svg");
     background-color:transparent;
     border:none;
     background-size:cover;
     width:45px;
     height: 50px;
+    position: absolute;
 }
 .kopce1
 {   
@@ -16,17 +16,20 @@
     background-size:cover;
     background-color:transparent;
     width:45px;
-    height:50px;
+    height:60px;
     border:none;
-margin-top:-16%;
-margin-left:68.5%;
-position: absolute;
+    margin-top:30%;
+    margin-left:8%;
+    position: absolute;
 }
 
 .login
 {
     float:left; margin-top:-2.3%;margin-left:1%;
     background-color: transparent;
+    font-style: oblique;
+    font-family: Blippo, fantasy;
+    color:white;
     border:none;
     font-size:120%;
 }
@@ -36,7 +39,7 @@ position: absolute;
 	content: ''; 
 	width: 100%; 
 	height: 2000%;
-    background-color:#EDE7F6; 
+    background:linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#c13584,#E1306C,#FD1D1D); 
     
 	position: absolute; 
 	top: 0; 
@@ -48,6 +51,9 @@ position: absolute;
 {
     float:right; margin-top:-2%;margin-right:1%;
     color:"primary";
+    color:white;
+    font-family: Blippo, fantasy;
+    font-style: oblique;
 }
 
 .dire
@@ -56,12 +62,13 @@ position: absolute;
     float:right;
     right:5%;
     margin-right: 2%;
-    margin-top:-31%;
+    margin-top:-45%;
     text-align:center;
-    background-color:rgb(212, 189, 255);
+    background-color:#c13584;
     border-radius:10px;
     font-size:125%;
-    box-shadow:5px 5px 5px gray;
+    color:white;
+    font-family:Blippo;
 }
 .straits
 {
@@ -70,16 +77,18 @@ position: absolute;
     float:left;
     right:5%;
     margin-left: 2%;
-    margin-top:-31%;
+    margin-top:-45%;
     text-align:center;
-    background-color:rgb(212, 189, 255);
+    background-color:#c13584;
     border-radius:10px;
     font-size:125%;
-    box-shadow:5px 5px 5px gray; 
+    color:white;
+    font-family:Blippo;
+    
 }
 .casa
 {
-    margin-top: 0.2%;
+    margin-top: -3%;
     margin-left:47%;
     font-size:125%;
     background-color: rgb(212, 189, 255) ;
@@ -88,12 +97,14 @@ position: absolute;
     border-radius:5px;
     text-align:center;
     box-shadow:5px 5px 5px gray;
+    font-family:Blippo;
 }
+
 .lajkop
 {
     float:right;
-    margin-top:-1.7%;
-    margin-right: 45%;
+    margin-top:-2%;
+    margin-right: 43%;
     border:none;
     background-image: url('https://i.ya-webdesign.com/images/facebook-like-and-love-buttons-png-transparent-6.png?fbclid=IwAR3D-qz9_5niWAHkDnJTqBnB4uPlKmMqR5MOCy5Y1L4ZMNTzjZDWUUYs03Q');
     background-size:cover;
