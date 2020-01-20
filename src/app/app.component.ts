@@ -35,10 +35,9 @@ export class AppComponent {
     this.apiService.getDescription(this.masa);
   }
   onLoadMore(){
-
     this.pageNumber++;
-    if (this.pageNumber== 11)
-    this.pageNumber=1;
+    if (this.pageNumber>= 11)
+    this.pageNumber=10;
     this.getPosts();
     this.masa++;
     this.apiService.getDescription(this.masa);
