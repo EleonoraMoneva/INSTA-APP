@@ -1,6 +1,9 @@
-class Post {
+ class Post {
     id: number;
     photoUrl: string;
+    description: string;
+    username: string;
+    comment:string [];
 }
 
 class PostComment {
@@ -13,4 +16,8 @@ class PostComment {
 class light
 {
     value: Boolean;
+}
+class desc
+{
+    descr:Boolean;
 }

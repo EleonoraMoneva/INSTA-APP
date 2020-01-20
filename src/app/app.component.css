@@ -1,7 +1,7 @@
 .kopce2
 {
     margin-top:-19%;
-    margin-left:52%;
+    margin-left:56%;
     position: absolute;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/7a/Red_Arrow_Right.svg");
     background-color:transparent;
@@ -19,14 +19,16 @@
     height:50px;
     border:none;
 margin-top:-16%;
-margin-left:52%;
+margin-left:56%;
 position: absolute;
 }
+
 .login
 {
-    float:left; margin-top:-2%;margin-left:1%;
+    float:left; margin-top:-2.3%;margin-left:1%;
     background-color: transparent;
     border:none;
+    font-size:120%;
 }
 
 #parent {height: 45px; position: relative;}
@@ -46,4 +48,32 @@ position: absolute;
 {
     float:right; margin-top:-2%;margin-right:1%;
     color:"primary";
+}
+
+.dire
+{   width:200px;
+    height:350px;
+    float:right;
+    right:5%;
+    margin-right: 2%;
+    margin-top:-18%;
+    text-align:center;
+    background-color:rgb(212, 189, 255);
+    border-radius:10px;
+    font-size:125%;
+    box-shadow:5px 5px 5px gray;
+}
+.straits
+{
+    width:200px;
+    height:350px;
+    float:left;
+    right:5%;
+    margin-left: 2%;
+    margin-top:-18%;
+    text-align:center;
+    background-color:rgb(212, 189, 255);
+    border-radius:10px;
+    font-size:125%;
+    box-shadow:5px 5px 5px gray; 
 }

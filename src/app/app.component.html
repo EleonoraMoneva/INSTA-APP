@@ -1,17 +1,21 @@
 
 <mat-toolbar id="brm" style="background-color:#FF1744; padding-left:48%;" >FEIT Instagram</mat-toolbar>
-<button  (click)="loginf()" class="login">Login</button>
 <mat-slide-toggle (click)="mode()"class="slajt">Light/Dark</mat-slide-toggle>
+<button  (click)="loginf()" class="login">Login</button>
+
 <div id="parent">
   <div id="child">
 <cdk-virtual-scroll-viewport [itemSize]="200" style="height: 1000px">
 <div *cdkVirtualFor="let post of posts">
-  <app-posts (click)="onClick(post)"[pictureUrl]="post.photoUrl"></app-posts>
+  <app-posts [pictureUrl]="post.imageURL"></app-posts>
+  <div id="pink" class ="dire" ><b>Description:</b><br><em>{{post.description}}</em></div>
+  <div id="floyd"class="straits" ><b>Comments:</b><br><em>{{post.comments}}</em></div>
 </div>
 <div >
  <div> <button class="kopce1"  (click)="onLoadLess()"></button></div>
  <div><button class="kopce2" (click)="onLoadMore()"></button></div>
 </div>
+
 </cdk-virtual-scroll-viewport>
   
 </div>
