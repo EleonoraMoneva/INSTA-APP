@@ -1,7 +1,7 @@
 .kopce2
 {
     margin-top:-19%;
-    margin-left:56%;
+    margin-left:68.5%;
     position: absolute;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/7a/Red_Arrow_Right.svg");
     background-color:transparent;
@@ -19,7 +19,7 @@
     height:50px;
     border:none;
 margin-top:-16%;
-margin-left:56%;
+margin-left:68.5%;
 position: absolute;
 }
 
@@ -51,12 +51,12 @@ position: absolute;
 }
 
 .dire
-{   width:200px;
-    height:350px;
+{   width:250px;
+    height:550px;
     float:right;
     right:5%;
     margin-right: 2%;
-    margin-top:-18%;
+    margin-top:-31%;
     text-align:center;
     background-color:rgb(212, 189, 255);
     border-radius:10px;
@@ -65,12 +65,12 @@ position: absolute;
 }
 .straits
 {
-    width:200px;
-    height:350px;
+    width:250px;
+    height:550px;
     float:left;
     right:5%;
     margin-left: 2%;
-    margin-top:-18%;
+    margin-top:-31%;
     text-align:center;
     background-color:rgb(212, 189, 255);
     border-radius:10px;
@@ -93,7 +93,7 @@ position: absolute;
 {
     float:right;
     margin-top:-1.7%;
-    margin-right: 32%;
+    margin-right: 45%;
     border:none;
     background-image: url('https://i.ya-webdesign.com/images/facebook-like-and-love-buttons-png-transparent-6.png?fbclid=IwAR3D-qz9_5niWAHkDnJTqBnB4uPlKmMqR5MOCy5Y1L4ZMNTzjZDWUUYs03Q');
     background-size:cover;
