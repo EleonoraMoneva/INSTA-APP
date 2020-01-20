@@ -1,15 +1,15 @@
 .main{
     width: 42%;
     height: 80%;
-    margin-top: 5em !important;
-    margin-left:26% !important;
-    background-position: center;
-    padding: 2em !important;
+    margin-top: 2em !important;
+    margin-left:27% !important;
+    background-color:transparent;
     float: center;
-    border-radius:10px;
-    background-color:rgb(240, 186, 222);
-    background-blend-mode: lighten;
-    box-shadow: 5px 5px 5px gray;
+    border-radius:8px;
+    background-position-x: center;
+   
+    
+  
 }
 
 .sizeImg{
@@ -26,7 +26,8 @@
      background-color:transparent;
      width: 40px;
      height: 40px;
-     margin-top:-15px;
+     margin-top:-16px;
+  
      border:none;
 }
 
@@ -40,7 +41,7 @@
     height:400px;
     color:black;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    background-color: rgb(212, 189, 255);
+    background-color:#C13584(212, 189, 255);
     
 }
 .comm
@@ -53,5 +54,5 @@
     height:400px;
     color:black;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    background-color: rgb(212, 189, 255);
+    background-color:#C13584(212, 189, 255);;
 }
