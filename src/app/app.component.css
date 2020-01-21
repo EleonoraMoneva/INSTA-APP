@@ -19,7 +19,7 @@
     height:50px;
     border:none;
     margin-top:-19%;
-    margin-left:8%;
+    margin-left:4%;
     position: absolute;
 }
 
@@ -88,7 +88,7 @@
 }
 .casa
 {
-    margin-top: -2.65%;
+    margin-top: -3.5%;
     margin-left:46%;
     font-size:125%;
     background-color: rgb(212, 189, 255) ;
@@ -103,8 +103,8 @@
 .lajkop
 {
     float:right;
-    margin-top:-1.5%;
-    margin-right: 39%;
+    margin-top:-2%;
+    margin-right: 36%;
     border:none;
     background-image: url('https://i.ya-webdesign.com/images/facebook-like-and-love-buttons-png-transparent-6.png?fbclid=IwAR3D-qz9_5niWAHkDnJTqBnB4uPlKmMqR5MOCy5Y1L4ZMNTzjZDWUUYs03Q');
     background-size:cover;
