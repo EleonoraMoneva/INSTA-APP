@@ -21,3 +21,7 @@ class desc
 {
     descr:Boolean;
 }
+class username
+{
+    descr:Boolean;
+}
